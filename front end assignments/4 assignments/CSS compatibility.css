@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Layout Example</title>
+  <style>
+    /* CSS for table with fixed layout */
+    .fixed-layout-table {
+      table-layout: fixed;
+      width: 100%; /* Specify the width of the table */
+    }
+
+    /* CSS for table with auto layout */
+    .auto-layout-table {
+      table-layout: auto;
+      width: 100%; /* Specify the width of the table */
+    }
+
+    /* CSS for table cells */
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+    /* CSS for the list */
+    .custom-list {
+        list-style-type: circle; /* Change list style type */
+      }
+  
+      /* Additional styling for list items */
+      .custom-list li {
+        margin-bottom: 8px; /* Add margin between list items for better readability */
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+  
+      .grid-item {
+        background-color: #ccc;
+        padding: 20px;
+        text-align: center;
+      }
+
+
+
+
+      .hero-image {
+        background-image: url('hero-image.jpg'); /* Replace 'hero-image.jpg' with your image file */
+        background-size: cover;
+        background-position: center;
+        height: 400px; /* Adjust height as needed */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        font-size: 2em;
+      }
+  
+      /* Additional styles for overlay text */
+      .overlay-text {
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+        padding: 20px;
+      }
+
+
+
+      /* Base styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+  
+      /* Grid container */
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+        padding: 20px;
+      }
+  
+      /* Media query for smaller screens */
+      @media screen and (max-width: 600px) {
+        .grid-container {
+          grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        }
+      }
+  
+      /* Media query for larger screens */
+      @media screen and (min-width: 1200px) {
+        .grid-container {
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+      }
+  
+      /* Image styles */
+      .grid-item img {
+        width: 100%;
+        height: auto;
+      }
+  
+      /* Video styles */
+      .grid-item video {
+        width: 100%;
+        height: auto;
+      }
+
+
+      
+  </style>
+</head>
+<body>
+  <h2>Table with Fixed Layout</h2>
+  <table class="fixed-layout-table">
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+    </tr>
+    <tr>
+      <td>Row 1, Cell 1</td>
+      <td>Row 1, Cell 2</td>
+      <td>Row 1, Cell 3</td>
+    </tr>
+    <tr>
+      <td>Row 2, Cell 1</td>
+      <td>Row 2, Cell 2</td>
+      <td>Row 2, Cell 3</td>
+    </tr>
+  </table>
+
+  <h2>Table with Auto Layout</h2>
+  <table class="auto-layout-table">
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+    </tr>
+    <tr>
+      <td>Row 1, Cell 1</td>
+      <td>Row 1, Cell 2</td>
+      <td>Row 1, Cell 3</td>
+    </tr>
+    <tr>
+      <td>Row 2, Cell 1</td>
+      <td>Row 2, Cell 2</td>
+      <td>Row 2, Cell 3</td>
+    </tr>
+  </table>
+</body>
+</html>
+
+
+

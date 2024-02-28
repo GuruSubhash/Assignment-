@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Non-Semantic Elements</title>
+  <style>
+    /* Styling for the page */
+    /* Styling for the page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+    nav {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px;
+    }
+    article, aside, section, figure {
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+    hgroup {
+      margin-bottom: 20px;
+    }
+    mark {
+      background-color: yellow;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+    .box {
+      border: 2px solid #333;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    .text {
+      color: #007bff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Non-Semantic Elements Example</h1>
+    <div class="box">
+      <div>This is a <span class="text">non-semantic</span> div element.</div>
+      <div>It is typically used for layout purposes and does not convey any meaning to the content.</div>
+    </div>
+    <div class="box">
+      <span>This is a <span class="text">non-semantic</span> span element.</span>
+      <span>It is used for applying styles or scripting to parts of the content without conveying any meaning.</span>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Semantic Elements Example</h1>
+    
+    <!-- Form -->
+    <form action="/submit" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <input type="submit" value="Submit">
+    </form>
+    
+    <!-- Table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Jane Smith</td>
+          <td>jane@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <!-- Article -->
+    <article>
+      <h2>What are Semantic Elements?</h2>
+      <p>Semantic elements are HTML elements that clearly describe their meaning in a human-readable way. They provide information about the content they contain, making it easier for both humans and machines to understand the structure and purpose of the document.</p>
+    </article>
+  </div>
+
+
+  
+  <header>
+    <h1>Header</h1>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <section>
+    <hgroup>
+      <h1>Main Section</h1>
+      <h2>Subheading</h2>
+    </hgroup>
+    
+    <article>
+      <h2>Article</h2>
+      <p>This is an article about HTML5 tags.</p>
+      <figure>
+        <img src="example.jpg" alt="Example Image">
+        <figcaption>Figure Caption</figcaption>
+      </figure>
+    </article>
+    
+    <aside>
+      <h2>Aside</h2>
+      <p>This is some additional content.</p>
+    </aside>
+    
+    <footer>
+      <p>Footer</p>
+      <time datetime="2023-10-01">October 1, 2023</time>
+    </footer>
+  </section>
+</body>
+</html>

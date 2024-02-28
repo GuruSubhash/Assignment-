@@ -1,0 +1,27 @@
+.background-image {
+    background-image: url(basics/images/black\ scren\ krishna.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; /* Image will cover the entire background */
+    background-attachment: fixed; /* Image will not scroll with the rest of the page */
+    height: 100vh; /* Full viewport height */
+    color: white; 
+
+}
+
+.container {
+    border-top-color: #ff0000; /* Red color for the top border */
+    border-right-color: #00ff00; /* Green color for the right border */
+    border-bottom-color: #0000ff; /* Blue color for the bottom border */
+    border-left-color: #ff00ff;
+}
+
+li {
+    width: -15px;
+    height: fit-content;
+}
+p { font-size: medium;
+font-style: italic;
+font-family: 'Times New Roman', Times, serif;
+color: gray;
+text-align: center;}

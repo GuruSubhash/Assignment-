@@ -1,0 +1,113 @@
+/* Define default styles for the table */
+table {
+    border-collapse: collapse;
+    border: 2px solid black;
+  }
+  
+  /* Change background color of the page when hovering over the table */
+  table:hover {
+    background-color: lightgray; /* Change to any color you desire */
+  }
+
+  
+
+
+  /* Default style for the element */
+.example {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Different visibility styles */
+  .hidden {
+    visibility: hidden;
+  }
+  
+  .visible {
+    visibility: visible;
+  }
+  
+  .collapsed {
+    visibility: collapse;
+  }
+  
+  /* Different display styles */
+  .none {
+    display: none;
+  }
+  
+  .inline {
+    display: inline;
+  }
+  
+  .block {
+    display: block;
+  }
+  
+  .contents {
+    display: contents;
+  }
+  
+  .list-item {
+    display: list-item;
+  }
+  /* Define styles for the scroll-to-top and scroll-to-bottom links */
+.scroll-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Change background color on hover */
+  .scroll-link:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Smooth scrolling behavior */
+  .scroll-link {
+    scroll-behavior: smooth;
+  }
+/* Define styles for the box */
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: #007bff;
+    border: 2px solid #000;
+  }
+  
+  /* Add padding with different sizes */
+  .box-with-padding {
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+  }
+  
+  /* Add margin with different sizes */
+  .box-with-margin {
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+  }
+    /* Define the styles for the webpage or element */
+.page {
+    width: 100%;
+    height: 100vh;
+    background-image: 
+      url('image1.jpg'), /* First background image */
+      url('image2.jpg'), /* Second background image */
+      url('image3.jpg'); /* Third background image */
+    background-position: center, top right, bottom left; /* Define the position of each background image */
+    background-size: cover, auto, 50%; /* Define the size of each background image */
+    background-repeat: no-repeat; /* Prevent background images from repeating */
+  }
+  

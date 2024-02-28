@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input Attributes Example</title>
+</head>
+<body>
+  <form action="/submit" method="POST">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+    <br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+    <br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+    <br>
+
+    <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <br>
+
+    <label for="newsletter">Subscribe to newsletter:</label>
+    <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+    <br>
+
+    <button type="button" onclick="alert('Button clicked!')">Click me</button>
+  </form>
+
+
+  <form action="/submit" method="POST">
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="100" placeholder="Enter quantity" required>
+    <br>
+
+    <label for="rating">Rating:</label>
+    <input type="range" id="rating" name="rating" min="1" max="5" step="1">
+    <br>
+
+    <label for="color">Choose a color:</label>
+    <input type="color" id="color" name="color">
+    <br>
+
+    <label for="birthdate">Birthdate:</label>
+    <input type="date" id="birthdate" name="birthdate">
+    <br>
+
+    <label for="avatar">Select an avatar:</label>
+    <input type="file" id="avatar" name="avatar" accept="image/*">
+    <br>
+
+    <label for="meeting-time">Select a time:</label>
+    <input type="time" id="meeting-time" name="meeting-time">
+    <br>
+
+    <label for="month">Select a month:</label>
+    <input type="month" id="month" name="month">
+    <br>
+
+    <label for="week">Select a week:</label>
+    <input type="week" id="week" name="week">
+    <br>
+
+    <label for="email">Email address:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+
+
+  <form action="/submit" method="POST">
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="100" value="1" required>
+    <br>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" maxlength="20" size="20" required>
+    <br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" minlength="8" required>
+    <br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="18" max="100" required>
+    <br>
+
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" rows="4" cols="50" maxlength="200" required></textarea>
+    <br>
+
+    <label for="email">Email address:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <br>
+
+    <label for="birthdate">Birthdate:</label>
+    <input type="date" id="birthdate" name="birthdate" max="2004-02-27" required>
+    <br>
+
+    <label for="avatar">Select an avatar:</label>
+    <input type="file" id="avatar" name="avatar" accept="image/*" required>
+    <br>
+
+    <label for="disabledInput">Disabled Input:</label>
+    <input type="text" id="disabledInput" name="disabledInput" disabled>
+    <br>
+
+    <label for="readonlyInput">Readonly Input:</label>
+    <input type="text" id="readonlyInput" name="readonlyInput" value="Readonly Value" readonly>
+    <br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+
+
+  <p>Click the link below to open a new page:</p>
+  <a href="https://www.example.com" target="_blank">Open Example.com in a new tab</a>
+
+
+  <h2>Embedded Website in an IFrame</h2>
+  <iframe src="https://www.example.com" width="800" height="600" frameborder="0"></iframe>
+  
+  <h2>Scrolling Text using Marquee</h2>
+  <marquee behavior="scroll" direction="left" scrollamount="10">
+    This is a scrolling text using the Marquee element. It can be used to display important information or announcements.
+  </marquee>
+</body>
+</html>

@@ -1,0 +1,118 @@
+/* CSS for the image box */
+.image-box {
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Apply shadow effect */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* CSS for the image */
+  .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* CSS for hover effect */
+  .image-box:hover {
+    cursor: pointer; /* Change cursor on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Apply different shadow effect on hover */
+  }
+
+  
+
+  /* CSS animation */
+@keyframes slidein {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .animated-element {
+    animation-name: slidein; /* Specify animation name */
+    animation-duration: 1s; /* Specify animation duration */
+    animation-iteration-count: infinite; /* Specify animation iteration count */
+    animation-delay: 0.5s; /* Specify animation delay */
+  }
+  
+  /* Pagination styles */
+  
+  /* Hoverable pagination */
+  .pagination {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  .pagination li {
+    display: inline;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Add transition for smooth color change */
+  }
+  .pagination li:hover {
+    color: blue; /* Change color on hover */
+  }
+  
+  /* Pagination with spaces */
+  .pagination.with-spaces li {
+    margin-right: 20px;
+  }
+  
+  /* Pagination without spaces */
+  .pagination.without-spaces li {
+    margin-right: 0;
+  }
+
+  
+
+  /* Static positioning */
+.static-position {
+    position: static;
+  }
+  
+  /* Relative positioning */
+  .relative-position {
+    position: relative;
+    top: 20px; /* Example of using relative positioning */
+    left: 20px; /* Example of using relative positioning */
+  }
+  
+  /* Fixed positioning */
+  .fixed-position {
+    position: fixed;
+    top: 20px; /* Example of using fixed positioning */
+    left: 20px; /* Example of using fixed positioning */
+  }
+  
+  /* Absolute positioning */
+  .absolute-position {
+    position: absolute;
+    top: 20px; /* Example of using absolute positioning */
+    left: 20px; /* Example of using absolute positioning */
+  }
+  
+  /* Sticky positioning */
+  .sticky-position {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 20px; /* Example of using sticky positioning */
+  }
+  .container {
+    width: 300px; /* Example width */
+    height: 200px; /* Example height */
+    overflow: scroll; /* Enable scrollbars when content overflows */
+  }
+
+  
+
+  .image-with-opacity {
+    opacity: 0.5; /* Adjust the value between 0 and 1 to change the opacity level */
+  }
+  
