@@ -1,0 +1,5 @@
+#This is a sample properties file... BY WriteUsingPropertiesFile class .
+#Sun Feb 18 21:29:44 IST 2024
+College=MIC Tech
+E.no=515
+Name=Subhash
